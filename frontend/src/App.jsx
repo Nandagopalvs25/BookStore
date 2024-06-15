@@ -7,7 +7,7 @@ import NotFound from "./pages/NotFound"
 import Cart from "./pages/Cart"
 import ProtectedRoute from "./components/ProtectedRoute"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Alert } from "bootstrap"
+import OrderPage from "./pages/OrderPage"
 
 <link
   rel="stylesheet"
@@ -42,7 +42,8 @@ function App() {
 
           <Route path="/"element={<Home/>} />
           <Route path="/cart"element={<ProtectedRoute> <Cart/></ProtectedRoute>} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/orders"element={<ProtectedRoute> <OrderPage/></ProtectedRoute>} />
+          <Route path="login" element={<Login />} />
           <Route path="register" element={<RegisterAndLogout/>} />
           <Route path="logout" element={<Logout/>} />
           <Route path="*" element={<NotFound/>}/>

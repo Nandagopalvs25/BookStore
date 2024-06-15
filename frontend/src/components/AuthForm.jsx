@@ -4,16 +4,18 @@ import { useNavigate, useResolvedPath } from "react-router-dom";
 import { ACCESS_TOKEN,REFRESH_TOKEN } from "../constants";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import CustomNavbar from "../pages/Navbar";
+import CustomNavbar from "./Navbar";
 
 
 function AuthForm({route,method}){
+   
 
          const [username,setUsername]=useState("")
          const [password,setPassword]=useState("")
          const [loading,setLoading]=useState("")
          const navigate=useNavigate()
-         const name=method==="login"? "Login":"Register"
+         const name=method==="login" ? "Login":"Register"
+         console.log(method)
 
          const handleSubmit= async (e)=>{
             setLoading(true)
