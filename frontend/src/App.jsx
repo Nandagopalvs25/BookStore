@@ -8,6 +8,7 @@ import Cart from "./pages/Cart"
 import ProtectedRoute from "./components/ProtectedRoute"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Alert } from "bootstrap"
+
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -27,9 +28,16 @@ function RegisterAndLogout(){
 }
 
 function App() {
+
+  
+ 
   return (
     
+    
+    
+    
    <BrowserRouter>
+    
     <Routes>
 
           <Route path="/"element={<Home/>} />
