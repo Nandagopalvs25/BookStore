@@ -17,8 +17,8 @@ class Book(models.Model):
 
 class Profile(models.Model):
      user=models.OneToOneField(User,on_delete=models.CASCADE,primary_key=True)
-     address=models.CharField(max_length=400)
-     phone_number=models.CharField(max_length=10)
+     address=models.CharField(max_length=400,null=True)
+     phone_number=models.CharField(max_length=10,null=True)
     
 class Cart(models.Model):
     user=models.OneToOneField(User,on_delete=models.CASCADE,primary_key=True)

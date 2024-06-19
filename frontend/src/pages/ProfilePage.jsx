@@ -5,6 +5,7 @@ import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Button from "react-bootstrap/esm/Button";
 import { useNavigate } from "react-router-dom";
+import Container from "react-bootstrap/esm/Container";
 
 function ProfilePage() {
 
@@ -25,7 +26,7 @@ function ProfilePage() {
 
     if(profile['is_admin']===true){
         return (
-            <Container>
+            <div>
                 <CustomNavbar></CustomNavbar>
                 <div className="px-3 py-3">
                 <h1 className="text-center">Profile page</h1>
@@ -38,7 +39,8 @@ function ProfilePage() {
                         
                     </ListGroup>
                 </Card>
-            </Container>
+                <Button onClick={()=>{navigate("/admin")}} className="mx-3">Admin Panel</Button>
+            </div>
         )
     }
     else{
@@ -57,7 +59,7 @@ function ProfilePage() {
                     </ListGroup>
                    
                 </Card>
-                <Button onClick={()=>{navigate("/admin")}} className="mx-3">Admin Panel</Button>
+               
                 
             </div>
         )
