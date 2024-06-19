@@ -10,6 +10,8 @@ from rest_framework.views import APIView
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
+from rest_framework import filters
+
 # Create your views here.
 
 class CreateUserView(generics.CreateAPIView):
@@ -22,6 +24,8 @@ class BookListView(generics.ListAPIView):
     queryset=Book.objects.all()
     serializer_class=BookSerializer
     permission_classes=[AllowAny]
+    filter_backends = [filters.SearchFilter]
+    search_fields = ['title','author']
 
 
 class CartView(APIView):
