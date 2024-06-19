@@ -29,6 +29,7 @@ function OrderPage(){
     return(
         <div>
         <CustomNavbar></CustomNavbar>
+        <h1 className="px-4 py-3">Orders</h1>
         <Row>
         {orders.map((order) => <OrderComponent order={order} key={order.id} />)}
         </Row>

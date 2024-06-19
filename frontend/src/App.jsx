@@ -8,7 +8,8 @@ import Cart from "./pages/Cart"
 import ProtectedRoute from "./components/ProtectedRoute"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import OrderPage from "./pages/OrderPage"
-
+import ProfilePage from "./pages/ProfilePage"
+import AdminPanel from "./pages/AdminPanel"
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -46,6 +47,8 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="register" element={<RegisterAndLogout/>} />
           <Route path="logout" element={<Logout/>} />
+          <Route path="profile" element={<ProfilePage/>} />
+          <Route path="admin" element={<AdminPanel/>} />
           <Route path="*" element={<NotFound/>}/>
 
     </Routes>

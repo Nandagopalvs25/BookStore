@@ -77,7 +77,7 @@ function Cart() {
             book_ids.push(book.id)
         })
         console.log(book_ids)
-        api.post("api/order/",{"book_ids":book_ids}).then(()=>alert("Order places Successfully"))
+        api.post("api/order/",{"book_ids":book_ids}).then(()=>alert("Order placed Successfully"))
         navigate("/")
             
     })
@@ -89,7 +89,8 @@ function Cart() {
         <div>
             <CustomNavbar></CustomNavbar>
 
-            <Container><h1 className="pt-3 text-center">Welcome to Your Cart</h1></Container>
+            <Container>
+                <h1 className="pt-3 text-center">Welcome to Your Cart</h1></Container>
             <Container>
                 <Card style={{ width: '28rem' }} className="px-5 py-2 my-5">
                     <Card.Title>Cart Summary</Card.Title>
