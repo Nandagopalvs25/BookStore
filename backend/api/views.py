@@ -3,9 +3,9 @@ from django.shortcuts import render
 from rest_framework.response import Response
 from django.contrib.auth.models import User
 from rest_framework import generics,status
-from .serializers import UserSerializer,BookSerializer,CartSerializer,OrderSerializer
+from .serializers import UserSerializer,BookSerializer,CartSerializer,OrderSerializer,ProfileSerializer
 from rest_framework .permissions import IsAuthenticated,AllowAny
-from .models import Book,Cart,Order
+from .models import Book,Cart,Order,Profile
 from rest_framework.views import APIView
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -26,6 +26,12 @@ class BookListView(generics.ListAPIView):
     permission_classes=[AllowAny]
     filter_backends = [filters.SearchFilter]
     search_fields = ['title','author']
+
+class ProfileView(APIView):
+   def get(self,request):
+       profile=Profile.objects.get(user=request.user)
+       serializer=ProfileSerializer(profile)
+       return Response(serializer.data)
 
 
 class CartView(APIView):
@@ -68,9 +74,12 @@ class OrderView(APIView):
         return Response(status=status.HTTP_201_CREATED)
     
 class OrderListView(generics.ListAPIView):
-    queryset=Order.objects.all()
+    model=Order
     serializer_class=OrderSerializer
     permission_classes=[IsAuthenticated]
+
+    def get_queryset(self):
+        return self.model.objects.filter(user=self.request.user)
 
 
 

@@ -14,6 +14,12 @@ class Book(models.Model):
     def __str__(self):
         return self.title
     
+
+class Profile(models.Model):
+     user=models.OneToOneField(User,on_delete=models.CASCADE,primary_key=True)
+     address=models.CharField(max_length=400)
+     phone_number=models.CharField(max_length=10)
+    
 class Cart(models.Model):
     user=models.OneToOneField(User,on_delete=models.CASCADE,primary_key=True)
     books=models.ManyToManyField(Book,blank=True,null=True)
