@@ -1,7 +1,7 @@
 # BookStore web application
 Watch the demo of the project at [ https://www.youtube.com/watch?v=gsDgopM8Cic&ab_channel=Snapeos]
 
-#Solution
+## Solution
 I chose the project option 1 of the task 2 ie an Online Bookstore. 
 I began the project by designing the database structure, i.e., the models, in Django based on the project requirements. I have used Postgres for the database. After designing the models, I planned out the features I needed to implement. 
 
