@@ -10,6 +10,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import OrderPage from "./pages/OrderPage"
 import ProfilePage from "./pages/ProfilePage"
 import AdminPanel from "./pages/AdminPanel"
+import BookForm from "./components/BookForm"
+import CreateBook from "./pages/CreateBook"
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -47,8 +49,10 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="register" element={<RegisterAndLogout/>} />
           <Route path="logout" element={<Logout/>} />
-          <Route path="profile" element={<ProfilePage/>} />
-          <Route path="admin" element={<AdminPanel/>} />
+          <Route path="profile" element={<ProtectedRoute><ProfilePage/></ProtectedRoute>} />
+          <Route path="admin" element={<ProtectedRoute><AdminPanel/></ProtectedRoute>} />
+          <Route path="editbook" element={<ProtectedRoute><BookForm/></ProtectedRoute>} />
+          <Route path="createbook" element={<ProtectedRoute><CreateBook/></ProtectedRoute>} />
           <Route path="*" element={<NotFound/>}/>
 
     </Routes>

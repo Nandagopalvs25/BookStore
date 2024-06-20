@@ -89,7 +89,7 @@ class CreateBook(generics.ListCreateAPIView):
 class EditBook(generics.RetrieveUpdateDestroyAPIView):
      queryset=Book.objects.all()
      serializer_class=BookSerializer
-     permission_classes=[AllowAny]
+     permission_classes=[IsAdminUser]
 
 
 

@@ -10,7 +10,7 @@ import Container from "react-bootstrap/esm/Container";
 function ProfilePage() {
 
     const [profile, setProfile] = useState("")
-    const navigate=useNavigate()
+    const navigate = useNavigate()
     useEffect(
         () => {
             loadProfile()
@@ -24,48 +24,47 @@ function ProfilePage() {
         }).catch((error) => alert(error.type));
     }
 
-    if(profile['is_admin']===true){
+    if (profile['is_admin'] === true) {
         return (
             <div>
                 <CustomNavbar></CustomNavbar>
                 <div className="px-3 py-3">
-                <h1 className="text-center">Profile page</h1>
+                    <h1 className="text-center">Profile page</h1>
+                </div>
+                <Card className="  mx-3 my-3" style={{ width: '75%' }}>
+                    <ListGroup variant="flush">
+                        <ListGroup.Item>Username:{profile["username"]}</ListGroup.Item>
+                        <ListGroup.Item>Address: {profile["address"]}</ListGroup.Item>
+                        <ListGroup.Item>Phone number: {profile["phone_number"]}</ListGroup.Item>
+                    </ListGroup>
+                </Card>
+                <Button onClick={() => { navigate("/admin") }} className="mx-3">Admin Panel</Button>
+            </div>
+        )
+    }
+    else {
+        return (
+            <div>
+                <CustomNavbar></CustomNavbar>
+                <div className="px-3 py-3">
+                    <h1 >Profile page</h1>
                 </div>
                 <Card className="  mx-3 my-3" style={{ width: '75%' }}>
                     <ListGroup variant="flush">
                         <ListGroup.Item>Username: {profile["username"]}</ListGroup.Item>
-                        <ListGroup.Item>Address: {profile["address"]}</ListGroup.Item>
-                        <ListGroup.Item>Phone number: {profile["phone_number"]}</ListGroup.Item>
-                        
-                    </ListGroup>
-                </Card>
-                <Button onClick={()=>{navigate("/admin")}} className="mx-3">Admin Panel</Button>
-            </div>
-        )
-    }
-    else{
-        return (
-            <div>
-                <CustomNavbar></CustomNavbar>
-                <div className="px-3 py-3">
-                <h1 >Profile page</h1>
-                </div>
-                <Card className="  mx-3 my-3" style={{ width: '75%' }}>
-                    <ListGroup variant="flush">
-                       <ListGroup.Item>Username: {profile["username"]}</ListGroup.Item>
                         <ListGroup.Item>Address:  {profile["address"]}</ListGroup.Item>
                         <ListGroup.Item>Phone number: {profile["phone_number"]}</ListGroup.Item>
-                       
+
                     </ListGroup>
-                   
+
                 </Card>
-               
-                
+
+
             </div>
         )
     }
 
-   
+
 
 
 }
