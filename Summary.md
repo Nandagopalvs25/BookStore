@@ -35,6 +35,7 @@ Pre requisites:
   ` git clone https://github.com/Nandagopalvs25/BookStore`
 2. Install Virtual env to create a python virtual environment
    ```
+   cd Bookstore
    pip install virtualenv
    python<version> -m venv <virtual-environment-name>
    env/Scripts/activate.bat //Activate virtual env In CMD
