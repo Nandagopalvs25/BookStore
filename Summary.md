@@ -1,5 +1,5 @@
 # BookStore web application
-Watch the demo of the project at [ https://www.youtube.com/watch?v=gsDgopM8Cic&ab_channel=Snapeos]
+Watch the demo of the project at [https://youtu.be/XWo0PKRS6GU]
 
 ## Solution
 I chose the project option 1 of the task 2 ie an Online Bookstore. 
