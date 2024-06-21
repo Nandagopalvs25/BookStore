@@ -68,6 +68,12 @@ python manage.py migrate
 python manage.py runserver
 ```
 The api should be up and runnning
+8. Cd into the frontend dir and run 
+```
+npm install
+npm run dev
+```
+Click on the link to view the website in the browser.
 
 
 
