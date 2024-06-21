@@ -33,3 +33,10 @@ Pre requisites:
 
 1. Create a folder and clone the repo <br/>
   ` git clone https://github.com/Nandagopalvs25/BookStore`
+2. Install Virtual env to create a python virtual environment
+   ```
+   pip install virtualenv
+   python -m venv /path/to/new/virtual/environment
+    ```
+
+
