@@ -45,5 +45,17 @@ Pre requisites:
    ```
     pip install -r requirements.txt
    ```
+4. Create a new PostgreSQL database using createdb or the pgAdmin tool
+```
+createdb --username=postgres <db_name>
+```
+5. Create a .env file in the backend dir and set the enviornment variables for the database
+  ```
+  DB_NAME=
+  DB_USER=
+  DB_PWD=
+  DB_HOST=
+  DB_PORT=
+```
 
 
