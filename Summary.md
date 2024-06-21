@@ -31,5 +31,5 @@ Pre requisites:
  - [PostgreSQL](https://www.postgresql.org/)
  - [Node js](https://nodejs.org/en)
 
-1. Create a folder and clone the repo
+1. Create a folder and clone the repo <br/>
   ` git clone https://github.com/Nandagopalvs25/BookStore`
