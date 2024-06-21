@@ -41,5 +41,9 @@ Pre requisites:
    env/Scripts/activate.bat //Activate virtual env In CMD
    env/Scripts/Activate.ps1 //Activate virtual env In Powershel
     ```
+3. Install dependencies for the api
+   ```
+    pip install -r requirements.txt
+   ```
 
 
