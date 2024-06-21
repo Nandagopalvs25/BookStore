@@ -21,12 +21,12 @@ I implemented rest API endpoints for the corresponding features and documented t
 https://github.com/axnsan12/drf-yasg,
 
 Designing the backend was relatively easy with my prior experience with the framework.
-However, designing the frontend part was a bit challenging since I did not have much experience in frontend development. After learning the basics of React, I started working on the frontend. To save time and reduce the hassle of writing CSS, I decided to use the React-Bootstrap framework, which helped me to create a basic, user-friendly, and responsive UI.
-(https://react-bootstrap.netlify.app/)
-I have also used Vite for the frontend development. (https://vitejs.dev/)
+However, designing the frontend part was a bit challenging since I did not have much experience in frontend development. After learning the basics of React, I started working on the frontend. To save time and reduce the hassle of writing CSS, I decided to use the [React-Bootstrap](https://react-bootstrap.netlify.app/) framework, which helped me to create a basic, user-friendly, and responsive UI.
+
+I have also used [Vite](https://vitejs.dev/) for the frontend development. 
 
 ## Backend local setup
 Pre requisites:
-[Python] (https://www.python.org/)
-[PostgreSQL](https://www.postgresql.org/)
+   [Python](https://www.python.org/)
+   [PostgreSQL](https://www.postgresql.org/)
 
