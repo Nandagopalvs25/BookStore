@@ -32,4 +32,6 @@ Pre requisites:
  - [Node js](https://nodejs.org/en)
 
 1. Create a folder and clone the repo
-     `git clone https://github.com/Nandagopalvs25/BookStore`
+     ```
+  git clone https://github.com/Nandagopalvs25/BookStore
+```
