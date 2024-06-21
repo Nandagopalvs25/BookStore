@@ -27,6 +27,6 @@ I have also used [Vite](https://vitejs.dev/) for the frontend development.
 
 ## Backend local setup
 Pre requisites:
-   [Python](https://www.python.org/)
-   [PostgreSQL](https://www.postgresql.org/)
+   -[Python](https://www.python.org/)
+   -[PostgreSQL](https://www.postgresql.org/)
 
