@@ -24,3 +24,4 @@ https://github.com/axnsan12/drf-yasg
 Designing the backend was relatively easy with my prior experience with the framework.
 However, designing the frontend part was a bit challenging since I did not have much experience in frontend development. After learning the basics of React, I started working on the frontend. To save time and reduce the hassle of writing CSS, I decided to use the React-Bootstrap framework, which helped me to create a basic, user-friendly, and responsive UI.
 (https://react-bootstrap.netlify.app/)
+I have also used Vite for the frontend development. (https://vitejs.dev/)
