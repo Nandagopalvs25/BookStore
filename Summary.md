@@ -67,7 +67,8 @@ python manage.py migrate
 ```
 python manage.py runserver
 ```
-The api should be up and runnning
+The api should be up and runnning </br>
+
 8. Cd into the frontend dir and run 
 ```
 npm install
