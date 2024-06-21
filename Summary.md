@@ -19,7 +19,14 @@ I was able to implement the business logic (views) very quickly with the help of
 (https://pypi.org/project/djangorestframework-simplejwt/)
 
 I implemented rest API endpoints for the corresponding features and documented them using Swagger docs.
-https://github.com/axnsan12/drf-yasg
+https://github.com/axnsan12/drf-yasg,
+
+# Backend local setup
+Pre requisites:
+[Python] (https://www.python.org/)
+[PostgreSQL](https://www.postgresql.org/)
+
+
 
 Designing the backend was relatively easy with my prior experience with the framework.
 However, designing the frontend part was a bit challenging since I did not have much experience in frontend development. After learning the basics of React, I started working on the frontend. To save time and reduce the hassle of writing CSS, I decided to use the React-Bootstrap framework, which helped me to create a basic, user-friendly, and responsive UI.
