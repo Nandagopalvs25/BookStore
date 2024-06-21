@@ -25,8 +25,9 @@ However, designing the frontend part was a bit challenging since I did not have 
 
 I have also used [Vite](https://vitejs.dev/) for the frontend development. 
 
-## Backend local setup
+## Project setup
 Pre requisites:
  - [Python](https://www.python.org/)
  - [PostgreSQL](https://www.postgresql.org/)
+ - [Node js](https://nodejs.org/en)
 
