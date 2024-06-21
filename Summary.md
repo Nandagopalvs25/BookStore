@@ -36,7 +36,9 @@ Pre requisites:
 2. Install Virtual env to create a python virtual environment
    ```
    pip install virtualenv
-   python -m venv /path/to/new/virtual/environment
+   python<version> -m venv <virtual-environment-name>
+   env/Scripts/activate.bat //Activate virtual env In CMD
+   env/Scripts/Activate.ps1 //Activate virtual env In Powershel
     ```
 
 
