@@ -59,5 +59,15 @@ createdb --username=postgres <db_name>
   DB_HOST=
   DB_PORT=
 ```
+6. Apply migrations
+```
+python manage.py migrate
+```
+7. Run the server using
+```
+python manage.py runserver
+```
+The api should be up and runnning
+
 
 
